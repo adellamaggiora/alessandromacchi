@@ -1,0 +1,51 @@
+$margin: 20px;
+$toolbarHeight: 50px;
+
+.toolbar-icon {
+    margin-left: $margin;
+}
+
+.toolbar {
+    background-color: var(--color2);
+    height: $toolbarHeight;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.toolbar-content {
+    justify-content: center;
+    align-items: center;
+}
+
+.toolbar-content > * {
+    margin-right: $margin;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: $toolbarHeight;
+    left: 0;
+    background-color: var(--color2);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav > * {
+    margin-bottom: $margin;
+    margin-left: $margin;
+}
+
+.sidenav-logo {
+    margin-top: $margin;
+}
+
+@media only screen and (min-width: 768px) {
+    .toolbar {
+        justify-content: center;
+    }
+  }

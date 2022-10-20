@@ -1,4 +1,28 @@
 <div class="toolbar">
-    
+
+    <i class="bi bi-list color-text-contrast pointer d-block d-md-none toolbar-icon" (click)="openNav()"
+        *ngIf="!menuOpened"></i>
+    <i class="bi bi-x-lg color-text-contrast pointer d-block d-md-none toolbar-icon" (click)="closeNav()"
+        *ngIf="menuOpened"></i>
+
+    <div id="mySidenav" class="sidenav d-block d-md-none">
+        <ng-container *ngIf="menuOpened">
+            <div class="sidenav-logo">
+                <app-logo [height]="30" [src]="'assets/images/logo-white.png'"></app-logo>
+            </div>
+            <div class="mat-small text-contrast pointer">Chi sono</div>
+            <div class="mat-small text-contrast pointer">Mi occupo di</div>
+            <div class="mat-small text-contrast pointer">Orientamento</div>
+            <div class="mat-small text-contrast pointer">Contatti</div>
+        </ng-container>
+    </div>
+
+    <div class="toolbar-content d-none d-md-flex">
+        <app-logo [height]="30" [src]="'assets/images/logo-white.png'"></app-logo>
+        <div class="mat-small text-contrast pointer">Chi sono</div>
+        <div class="mat-small text-contrast pointer">Mi occupo di</div>
+        <div class="mat-small text-contrast pointer">Orientamento</div>
+        <div class="mat-small text-contrast pointer">Contatti</div>
+    </div>
 
 </div>
