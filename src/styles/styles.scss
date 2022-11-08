@@ -1,5 +1,4 @@
 @import "./font.scss";
-@import "./reset.scss";
 @import "./typography.scss";
 @import "./color-palette.scss";
 
@@ -25,4 +24,18 @@ html, body {
 .pointer:hover {
     cursor: pointer;
     opacity: 0.7;
+}
+
+.hr {
+    width: 100%;
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid var(--color2);
+    border-bottom: 1px solid var(--background);
+}
+
+.flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

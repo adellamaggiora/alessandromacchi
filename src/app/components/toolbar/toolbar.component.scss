@@ -7,6 +7,7 @@ $toolbarHeight: 50px;
 
 .toolbar {
     background-color: var(--color2);
+    color: var(--color-text-contrast);
     height: $toolbarHeight;
     display: flex;
     justify-content: flex-start;

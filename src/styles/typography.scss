@@ -1,9 +1,8 @@
-.text {
-    color: var(--color-text);
-}
+$base-font-size: 19px;
+$title-margin: 10px;
 
-.text-contrast {
-    color: var(--color-text-contrast);
+.text {
+    font-size: $base-font-size;
 }
 
 .mat-small {
@@ -11,13 +10,16 @@
 }
 
 .mat-h1 {
-    font-size: 35px;
+    font-size: 38px;
+    margin-bottom: $title-margin;
 }
 
 .mat-h2 {
-    font-size: 26px;
+    font-size: 29px;
+    margin-bottom: $title-margin;
 }
 
 .mat-h3 {
-    font-size: 20px;
+    font-size: 22px;
+    margin-bottom: $title-margin;
 }
