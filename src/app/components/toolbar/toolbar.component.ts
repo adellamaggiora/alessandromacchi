@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-toolbar',
@@ -9,19 +9,27 @@ export class ToolbarComponent {
 
   constructor() { }
 
-  menuOpened: boolean;
+  @Output() itemSelected = new EventEmitter(null);
+  menuOpened: boolean;  
 
   openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     setTimeout(() => {
       this.menuOpened = true;  
-    }, 150);
-    
+    }, 150);    
   }
   
   closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     this.menuOpened = false;
-  } 
+  }
+
+  selectItem(itemId: string) {
+    this.closeNav();
+    setTimeout(() => {
+      this.itemSelected.emit(itemId);
+    }, 400)
+    
+  }
 
 }

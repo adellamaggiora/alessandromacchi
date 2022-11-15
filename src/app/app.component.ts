@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'alessandro-macchi';
+
+  constructor() { }
+
+  scrollIntoSection(sectionId: string) {
+    document.getElementById(sectionId)?.scrollIntoView()
+  }
+
 }

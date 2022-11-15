@@ -12,9 +12,6 @@ footer {
     background-color: var(--color1);    
     color: var(--color-text-contrast);
     border-top: 1px solid var(--color-text);
-    background-repeat: no-repeat;
-    background-image: url(/assets/index-rocket-ef425ba508961fee99c87f537d72240849d8fbe81789245b23aa4d381fd7358a.svg);
-    background-position: calc(50% + 380px) 60px;
 }
 
 footer i {
@@ -29,14 +26,38 @@ footer i {
     align-items: center;
 }
 
+.footer-brand-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
 .contacts-detail {
     display: flex;
     align-items: center;
 }
 
 .credits {
+    display: flex;
+    align-items: flex-start;
     background-color: var(--color2);
     color: var(--color-text-contrast);
     padding: 15px;
     gap: 5px;
+}
+
+.credits > a,i {
+    margin-top: 2px;
+}
+
+.credits-contacts {
+    margin-left: 10px;
+}
+
+
+@media only screen and (min-width: 992px){
+    .footer-brand-container {
+        display: block;
+        margin: 0;
+    }
 }

@@ -10,19 +10,19 @@
             <div class="sidenav-logo">
                 <app-logo [height]="30" [src]="'assets/images/logo-white.png'"></app-logo>
             </div>
-            <div class="mat-small text-contrast pointer">Chi sono</div>
-            <div class="mat-small text-contrast pointer">Mi occupo di</div>
-            <div class="mat-small text-contrast pointer">Orientamento</div>
-            <div class="mat-small text-contrast pointer">Contatti</div>
+            <div class="mat-small text-contrast pointer" (click)="selectItem('about-section')">Chi sono</div>
+            <div class="mat-small text-contrast pointer" (click)="selectItem('target-section')">Mi occupo di</div>
+            <div class="mat-small text-contrast pointer" (click)="selectItem('orientation-section')">Orientamento</div>
+            <div class="mat-small text-contrast pointer" (click)="selectItem('contacts-section')">Contatti</div>
         </ng-container>
     </div>
 
     <div class="toolbar-content d-none d-md-flex">
         <app-logo [height]="30" [src]="'assets/images/logo-white.png'"></app-logo>
-        <div class="mat-small text-contrast pointer">Chi sono</div>
-        <div class="mat-small text-contrast pointer">Mi occupo di</div>
-        <div class="mat-small text-contrast pointer">Orientamento</div>
-        <div class="mat-small text-contrast pointer">Contatti</div>
+        <div class="mat-small text-contrast pointer" (click)="selectItem('about-section')">Chi sono</div>
+        <div class="mat-small text-contrast pointer" (click)="selectItem('target-section')">Mi occupo di</div>
+        <div class="mat-small text-contrast pointer" (click)="selectItem('orientation-section')">Orientamento</div>
+        <div class="mat-small text-contrast pointer" (click)="selectItem('contacts-section')">Contatti</div>
     </div>
 
 </div>

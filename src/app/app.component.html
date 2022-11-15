@@ -1,18 +1,18 @@
-<app-toolbar></app-toolbar>
+<app-toolbar (itemSelected)="scrollIntoSection($event)"></app-toolbar>
 
 <div class="container">
 
   <!--div class=" mat-h3 color2 title"> Dott. Alessandro Macchi</div-->
 
-  <section>
+  <section id="about-section">
 
     <div class="mat-h2 color2"> Chi sono</div>
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-lg-4">
         <img src="assets/images/profile-picture.jpg" height="290">
       </div>
 
-      <div class="col-md-8">
+      <div class="col-lg-8">
         <!--div class="mat-h2 color2"> Chi sono</div-->
         <div class="text">
           Laureato in Psicologia del ciclo di vita e contesti presso l’Università degli studi di Firenze.
@@ -33,13 +33,13 @@
 
   <hr>
 
-  <section>
+  <section id="target-section">
 
     <div class="mat-h2 color2"> Mi occupo di </div>
 
     <div class="row target">
 
-      <div class="col-md-4">
+      <div class="col-lg-4">
         <div class="flex-centered">
           <img src="assets/images/target/adults.jpg" height="200">
         </div>
@@ -52,7 +52,7 @@
           persona.
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-4">
         <div class="flex-centered">
           <img src="assets/images/target/teenager.jpg" height="200">
         </div>
@@ -65,7 +65,7 @@
           affrontare la vita adulta.
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-4">
         <div class="flex-centered">
           <img src="assets/images/target/parents.jpg" height="200">
         </div>
@@ -85,14 +85,14 @@
 
   <hr>
 
-  <section>
+  <section id="orientation-section">
     <div class="mat-h2 color2"> Orientamento </div>
 
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-lg-4">
         <img src="assets/images/orientation.jpg" height="200">
       </div>
-      <div class="col-md-8 text">
+      <div class="col-lg-8 text">
         <!--div class="mat-h2 color2"> Orientamento </div-->
         Il modello di riferimento è la psicoterapia cognitiva, in particolare la svolta costruttivista ed evolutiva
         intrapresa da Vittorio Guidano e Gianni Liotti. Ogni essere umano è dotato di una propria mappa del mondo
@@ -109,20 +109,19 @@
 
 </div>
 
-<footer>
+<footer id="contacts-section">
   <div class="container">
     <!--div class="mat-h2"> Contatti </div-->
     <div class="row">
 
-      <div class="col-md-4">
+      <div class="col-lg-4 footer-brand-container">
         <div class="footer-brand">
           <img src="assets/images/logo-white.png" height="50">
           <div>Alessandro Macchi</div>
         </div>
-
       </div>
 
-      <div class="col-md-4">
+      <div class="col-lg-4">
         <div>
           <i class="pointer bi bi-linkedin"></i>
         </div>
@@ -132,7 +131,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-lg-4">
         <div>
           <span class="contacts-detail">
             <i class="pointer bi bi-phone"></i>
@@ -160,11 +159,14 @@
 
   </div>
 </footer>
+
 <div class="mat-small flex-centered credits">
   <i class="bi bi-code"></i>
   <span> with </span>
   <i class="bi bi-heart-fill"></i>
   <span>by</span>
   <span>Andrea Della Maggiora</span>
-  <i class="pointer bi bi-envelope"></i>
+  <a class="credits-contacts" href="https://www.instagram.com/fedrozenzero">
+    <i class="bi bi-instagram pointer"></i>
+  </a>  
 </div>
